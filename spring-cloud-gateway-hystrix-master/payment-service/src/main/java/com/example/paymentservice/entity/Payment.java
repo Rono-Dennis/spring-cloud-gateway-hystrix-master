@@ -1,5 +1,6 @@
 package com.example.paymentservice.entity;
 
+import com.example.paymentservice.service.PaymentService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import javax.persistence.Table;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Payment {
+public class Payment {// extends PaymentService
     @Id
     @GeneratedValue
     private int paymentId;

@@ -1,6 +1,20 @@
 server:
   port: 9192
 spring:
- h2:
-   console:
-     enabled: true
+# h2:
+#   console:
+#     enabled: true
+ application:
+   name: PAYMENT-SERVICE
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+logging:
+  file:
+    name: C:Users/reece/Desktop/logs/microservices.log
+#    hostname: localhost
