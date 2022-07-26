@@ -22,7 +22,7 @@ spring:
               args:
                 name: payment-service
                 fallbackuri: forward:/paymentFallback
-                
+
 #eureka:
 #  client:
 #    register-with-eureka: true
@@ -34,7 +34,7 @@ spring:
 
 server:
   port: 8989
-  
+
 management:
   endpoints:
     web:

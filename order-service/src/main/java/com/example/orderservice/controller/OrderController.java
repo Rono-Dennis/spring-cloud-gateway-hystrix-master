@@ -14,7 +14,7 @@ public class OrderController {
     private OrderService orderService;
 
     @PostMapping("/bookOrder")
-    public Order bookOrder(@RequestBody Order order){
+    public Order bookOrder(@RequestBody Order order) {
         return orderService.saveOrder(order);
     }
 }

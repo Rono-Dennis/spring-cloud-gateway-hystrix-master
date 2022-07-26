@@ -12,10 +12,10 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @EnableHystrix
 public class CloudGatewayApplication {
 
-	public static void main(String[] args) {
-		 new SpringApplicationBuilder(CloudGatewayApplication.class)
-				 .web(WebApplicationType.REACTIVE)
-				 .run(args);
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(CloudGatewayApplication.class)
+                .web(WebApplicationType.REACTIVE)
+                .run(args);
+    }
 
 }

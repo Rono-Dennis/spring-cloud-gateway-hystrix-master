@@ -24,12 +24,12 @@ public class PaymentService {
         return paymentRepository.save(payment);
     }
 
-    public String paymentProcessing(){
-        return new Random().nextBoolean()?"success":"false";
+    public String paymentProcessing() {
+        return new Random().nextBoolean() ? "success" : "false";
     }
 
-    public Payment findPaymentHistoryOrderId(int orderId) throws JsonProcessingException{
-        Payment payment=paymentRepository.findByOrderId(orderId);
+    public Payment findPaymentHistoryOrderId(int orderId) throws JsonProcessingException {
+        Payment payment = paymentRepository.findByOrderId(orderId);
         log.info("OrderService request {}", new ObjectMapper().writeValueAsString(payment));
         return payment;
     }
